@@ -1,0 +1,12 @@
+FastAPI requires Python 3.7 or later. So make sure you have a recent version of Python installed. In the project directory, create and activate a dedicated virtual environment for the project:
+
+# below commands setup virtual environment for python3
+$ python3 -m venv v1
+$ source v1/bin/activate
+ you can start intalling packages  using pip install 
+
+ # below commands for windows 
+python3 -m venv v1
+v1\Scripts\activate
+
+after this start installing packages using pip install 
