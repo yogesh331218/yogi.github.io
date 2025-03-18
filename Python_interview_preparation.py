@@ -58,7 +58,51 @@ print(sq_evn_lst)
 lt = [[j for j in range(4)] for i in range(3)]
 
 print(lt)
+# ZIP() function 
+#The zip() function in Python combines multiple iterables such as lists, tuples, 
+# strings, dict etc, into a single iterator of tuples. Each tuple contains elements 
+# from the input iterables that are at the same position.
+
+names = ['John', 'Alice', 'Bob', 'Lucy']
+scores = [85, 90, 78, 92]
+
+res = zip(names, scores)
+print(list(res))
+
+# Output 
+# [('John', 85), ('Alice', 90), ('Bob', 78), ('Lucy', 92)]
 
 #Dictionary comprehension is a method for transforming one dictionary into another dictionary.
 # During this transformation, items within the original dictionary can be conditionally 
 # included in the new dictionary and each item can be transformed as needed.
+
+stu = { k:v for (k, v) in zip(names, scores)}
+print(stu)
+
+# Sqare dictionary for even number 
+
+sq_dict = { i: i*i for i in range(1,5)if i % 2 == 0}
+print(sq_dict)
+
+# Set comprehension is a method for creating sets in python using the elements from other 
+# iterables like lists, sets, or tuples. Just like we use list comprehension to 
+# create lists, we can use set comprehension instead of for loop to create a new 
+# set and add elements to it.
+
+# set 
+
+sat = {i for i in scores}
+
+print(sat)
+for x in sat:
+    print(x)
+
+
+# Time and space complexities in Python 
+# https://aman.ai/code/data-structures/#python-time-complexities 
+# https://binarybeats.medium.com/python-set-data-structure-methods-use-time-and-space-complexity-366b8c408345
+
+# Python Data Structure, below is the good article 
+# https://aman.ai/code/data-structures/ 
+# New code commit ++++++++++++++++++++
+# fhldhflsj
